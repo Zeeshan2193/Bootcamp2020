@@ -18,7 +18,7 @@ function App() {
         >
           
         </a>
-        <p>Here We are going to learn react</p>
+        <p>Here We are going to learn react to all</p>
       </header>
     </div>
   );
