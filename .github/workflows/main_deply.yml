@@ -28,15 +28,15 @@ jobs:
     - name: GitHub Action for Yarn
       uses: Borales/actions-yarn@v2.1.0
       with:
-        # Yarn command
+        # Yarn command easily
         cmd: install # npm install/ yarn install
     
     - name: Creating build
-      run: yarn build
+      run: npm build
     
     - name: installing surge  
       run: npm install -g surge
     
     - name: deploying on surge
-      run: surge ./react-app-2020/build secret_secretary.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./react-app-2020 ./build secret_secretary.surge.sh --token ${{secrets.SURGE_TOKEN}}
     
