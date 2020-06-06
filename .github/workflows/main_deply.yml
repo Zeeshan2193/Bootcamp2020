@@ -38,5 +38,5 @@ jobs:
       run: npm install -g surge
     
     - name: deploying on surge
-      run: surge ./react-app-2020/build http://secret_secretary.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./react-app-2020/build secret_secretary.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
     
